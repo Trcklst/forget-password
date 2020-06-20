@@ -1,0 +1,17 @@
+POST http://localhost:8020/api/forget-password/send/
+Content-Type: application/json
+
+{
+   "email": "decultot.louis@gmail.com"
+}
+
+###
+
+POST http://localhost:8020/api/forget-password/reset/
+Content-Type: application/json
+
+{
+   "token": "2-O8RpQ98sni6P78PaYxgDQf7joTzZ0yPkQnm5oMH3JvHzGkBcsVYTzFhGgOWDEumoXvm0fleKUlBg9c7M5u8TvIBVEvQQyMjKOphd66ObsqD8HB63dQrKJpbMnS90YeAL3VGXQAGEZSZPMW3YIKg5VmxwG6QN7dHttPdpBnKIKnoA5MQyVFjQSk7HmNj9GhnH2pWiRbTp",
+   "newPassword": "user"
+}
+
