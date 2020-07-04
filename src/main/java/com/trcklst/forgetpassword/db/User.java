@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -22,6 +21,10 @@ public class User {
     private String username;
     @Field
     private String password;
+    @Field
+    private String authority;
+    @Field
+    private boolean active;
     @Field
     private String restPasswordToken;
 }
