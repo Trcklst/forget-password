@@ -15,3 +15,12 @@ Content-Type: application/json
    "newPassword": "user"
 }
 
+###
+
+PATCH http://localhost:8020/api/password/update/
+Content-Type: application/json
+userId: 1
+
+{
+   "newPassword": "lala"
+}
